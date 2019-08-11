@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="org.radialtheater.shakespeareinsults.shared.SharedViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.main.MainFragment">
+
+        <ImageView
+                android:id="@+id/theatre_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/theatre_01"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/swan_theatre"
+                android:adjustViewBounds="true"/>
+
+        <ImageView
+                android:id="@+id/theatre_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/theatre_02"
+                app:layout_constraintTop_toBottomOf="@id/theatre_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/swan_theatre"
+                android:adjustViewBounds="true"/>
+
+        <ImageView
+                android:id="@+id/theatre_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/theatre_03"
+                app:layout_constraintTop_toBottomOf="@id/theatre_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/swan_theatre"
+                android:adjustViewBounds="true"/>
+
+        <ImageView
+                android:id="@+id/theatre_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/theatre_04"
+                app:layout_constraintTop_toBottomOf="@id/theatre_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/swan_theatre"
+                android:adjustViewBounds="true"/>
+
+        <ImageView
+                android:id="@+id/theatre_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/theatre_05"
+                app:layout_constraintTop_toBottomOf="@id/theatre_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/swan_theatre"
+                android:adjustViewBounds="true"/>
+
+        <TextView
+                android:id="@+id/word1"
+                android:text="@{viewModel.word1}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/theatre_1"
+                tools:text="frothy"
+                style="@style/random_word"/>
+
+        <TextView
+                android:id="@+id/word2"
+                android:text="@{viewModel.word2}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/theatre_2"
+                tools:text="fat-kidneyed"
+                style="@style/random_word"/>
+
+        <TextView
+                android:id="@+id/word3"
+                android:text="@{viewModel.word3}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/theatre_3"
+                tools:text="strumpet"
+                style="@style/random_word"/>
+
+        <Button
+                android:id="@+id/insultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/insult_me"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/theatre_4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:background="@drawable/button_shape"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:onClick="@{() -> viewModel.generateInsult()}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

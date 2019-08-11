@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/insult_settings_category_title">
+
+        <CheckBoxPreference
+                android:icon="@drawable/ic_sounds"
+                android:key="play_sounds"
+                android:title="@string/play_sound_preference_title"
+                android:summary="@string/play_sound_preference_summary"
+                android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

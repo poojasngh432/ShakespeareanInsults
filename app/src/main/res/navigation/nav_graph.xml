@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="org.radialtheater.shakespeareinsults.ui.main.MainFragment"
+            android:label="MainFragment"
+            tools:layout="@layout/fragment_main">
+
+        <action
+                android:id="@+id/action_nav_settings"
+                app:destination="@+id/settingsFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+                android:id="@+id/action_nav_about"
+                app:destination="@+id/aboutFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+                android:id="@+id/action_nav_last10"
+                app:destination="@id/last10Fragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <!-- fragments-->
+    <fragment
+            android:id="@+id/resultFragment"
+            android:name="org.radialtheater.shakespeareinsults.ui.result.ResultFragment"
+            android:label="result_fragment"
+            tools:layout="@layout/fragment_result"/>
+
+    <fragment
+            android:id="@+id/settingsFragment"
+            android:name="org.radialtheater.shakespeareinsults.ui.settings.SettingsParentFragment"
+            android:label="fragment_settings"/>
+
+    <fragment
+            android:id="@+id/aboutFragment"
+            android:name="org.radialtheater.shakespeareinsults.ui.about.AboutFragment"
+            android:label="fragment_about"/>
+
+    <fragment
+            android:id="@+id/last10Fragment"
+            android:name="org.radialtheater.shakespeareinsults.ui.last10.Last10Fragment"
+            android:label="fragment_last10"
+            tools:layout="@layout/fragment_last10"/>
+
+    <!--  global action to display an insult  -->
+    <action
+            android:id="@+id/action_nav_insult"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+</navigation>

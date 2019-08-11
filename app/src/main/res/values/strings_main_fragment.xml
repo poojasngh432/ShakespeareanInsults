@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_nav_drawer">Open navigation drawer</string>
+    <string name="close_nav_drawer">Close navigation drawer</string>
+    <string name="word1_default">Press</string>
+    <string name="word2_default">the</string>
+    <string name="word3_default">Button!</string>
+    <string name="insult_me">Insult me!</string>
+    <string name="thinking_about_it">Thinking about it…</string>
+</resources>

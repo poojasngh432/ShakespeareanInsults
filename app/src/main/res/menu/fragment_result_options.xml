@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/action_speak"
+            android:title="@string/speak_the_insult"
+            android:icon="@drawable/ic_voice_white"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/action_copy"
+            android:title="@string/copy"
+            android:icon="@drawable/ic_copy"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:title="@string/share"
+            android:icon="@drawable/ic_share_white"
+            app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                    android:id="@+id/action_share_text"
+                    android:title="@string/insult_text"
+                    android:icon="@drawable/ic_text"/>
+
+            <item
+                    android:id="@+id/action_share_file"
+                    android:title="@string/audio_file"
+                    android:icon="@drawable/ic_voice_black"/>
+
+        </menu>
+
+    </item>
+
+</menu>

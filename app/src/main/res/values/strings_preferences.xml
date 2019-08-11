@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insult_settings_category_title">Insult settings</string>
+    <string name="play_sound_preference_title">Play sounds</string>
+    <string name="play_sound_preference_summary">Play sounds when generating a new insult</string>
+<!--    <string name="speak_now_preference_title">Speak the speech I pray you</string>-->
+<!--    <string name="speak_now_preference_summary">Play the audio of an insult immediately upon displaying it</string>-->
+</resources>

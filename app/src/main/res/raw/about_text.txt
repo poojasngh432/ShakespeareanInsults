@@ -1,0 +1,24 @@
+Radial Theater Project, Seattle WA
+http://radialtheater.org
+Designed and developed by David Gassner
+
+Version %s
+Updated %s
+
+Open source credits
+This application uses open source components licensed under Apache License 2.0. We acknowledge and are grateful to these developers for their contributions to open source.
+
+Gson
+https://github.com/google/gson
+
+Apache License 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+Image credits
+Swan Theatre: Sketch by Johannes de Witt, 1596
+Shakespeare icon: Engraving by Martin Droeshout, 1623
+Shakespeare cartoon: iStock.com/dedMazay
+
+Why ads?
+Proceeds from this app support production of live theater in Seattle, WA!
+

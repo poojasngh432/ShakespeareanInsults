@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Shakespearean Insult Generator</string>
+    <string name="publisher_name">Radial Theater, Seattle WA</string>
+    <string name="insults">Insults</string>
+    <string name="shakespeare">William Shakespeare</string>
+    <string name="swan_theatre">Swan Theatre</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="radial_theater_project">Radial Theater Project</string>
+    <string name="insulting_you">I\'m insulting you, try again later!</string>
+    <string name="about">About</string>
+    <string name="share_the_app">Share the app</string>
+    <string name="not_implemented">Not implemented yet</string>
+    <string name="speak_the_insult">Speak the insult</string>
+    <string name="heres_an_insult">Here\'s a Shakespearean insult for you!</string>
+    <string name="share_file_name">%s_%s_%s.wav</string>
+    <string name="title_last_10_fragment">Last 10 Insults</string>
+    <string name="title_main_fragment">Shakespearean Insults</string>
+    <string name="title_result_fragment">Your Insult</string>
+    <string name="words_words_words">Words, words, words.</string>
+    <string name="share_as_text">Share insult as text</string>
+    <string name="share_as_file">Share insult as audio</string>
+    <string name="your_insult">Your insult</string>
+</resources>
